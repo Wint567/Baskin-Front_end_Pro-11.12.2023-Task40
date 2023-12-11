@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<style>
+    body{
+        background-color: #F5F5DC;
+    }
+
+    .instruments{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .button, .random{
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        background: #0B63F6;
+        box-shadow: 0 5px 0 #003CC5;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button:hover, .random:hover {
+        background: #003CC5;
+        box-shadow: none;
+        position: relative;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    .gitHubUserName {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    
+
+</style>
+<body>
+    <div class="instruments">
+        <input class="gitHubUserName" type="text" placeholder="Введите имя пользователя">
+        <button class="button">Поиск</button>
+        <button class="random">Случайный пользователь</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
